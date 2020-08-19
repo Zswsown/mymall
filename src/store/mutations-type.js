@@ -1,0 +1,5 @@
+export const ADD_TO_SHOPCART='addToShopcart'
+export const Add_GOOD_COUNT='addGoodCount'
+export const DELETE_GOOD='deleteGood'
+export const DECREASE_GOOD_COUNT='decreaseGoodCount'
+export const INCREASE_GOOD_COUNT='increaseGoodCount'

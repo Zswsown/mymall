@@ -48,8 +48,10 @@ const routes=[
 
 // 3.创建路由对象
 const router=new VueRouter({
+  mode:'hash',
+  base:process.env.BASE_URL,
   routes,
-  mode:'history'
+  // mode:'history', //history是相对于根目录的，要history生效生效只能配置服务器的根目录
 })
 
 // 4.导出路由

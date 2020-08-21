@@ -1,6 +1,6 @@
 module.exports={
-  publicPath:'./',
-  outputDir:'dist',
+  // publicPath:'./',
+  // outputDir:'dist',
   // configureWebpack:{
   //   resolve:{
   //     // 配置路径别名

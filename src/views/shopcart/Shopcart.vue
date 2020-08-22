@@ -52,7 +52,7 @@
         // 购物车商品的数量
         'shopcartListLength',
         // 购物车商品列表
-        'shopcartList'
+        'shopcartList',
       ])
     },
     data(){
@@ -67,7 +67,7 @@
     deactivated() {
       // 页面发生跳转的话，则在下次进入该页面还是显示“管理”图标
       this.isNavActive=false;
-      this.navBarRightText="管理"
+      this.navBarRightText="管理";
     },
 
     // 每当详情页添加商品进购物车时，会触发购物车页面进行刷新操作,防止购物车页面不可以滚动

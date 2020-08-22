@@ -54,6 +54,10 @@
     components: {
       CheckButton
     },
+    // 当离开页面时，加减器默认隐藏
+    deactivated() {
+      this.isCountClick=false;
+    },
     methods: {
       // 点击勾选按钮时进行取反
       checkedChange: function () {
@@ -78,6 +82,10 @@
           document.getElementsByClassName('.decrease').disabled=false;
         }
         this.$store.dispatch('increaseGoodCount',this.shopcartGoodsItem);
+      },
+      // 当离开购物车页面时，商品的删除图标都不显示
+      shopcartItemDeleltIconShow(){
+        this.isCountClick=false;
       }
     }
   }

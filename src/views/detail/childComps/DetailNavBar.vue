@@ -14,7 +14,7 @@
         <div slot="nav-left"
              class="detailBackIcon"
              @click="detailBackIconClick">
-          <img src="../../../assets/images/common/back.svg" alt="">
+          <img src="../../../assets/images/common/back.png" alt="">
         </div>
       </nav-bar>
     </div>

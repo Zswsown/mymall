@@ -13,7 +13,8 @@ export function request(config){
   },err=>{
     // console.log("请求拦截失败")
     // 抛出异常
-    throw err
+    // throw err
+    console.log(err)
   })
   // 3.响应拦截
   instance.interceptors.response.use(res=>{

@@ -1,21 +1,17 @@
 <template>
   <div class="recommend-info">
     <div class="info-header">热门推荐</div>
-    <grid-view>
-      <goods-list-item v-for="(item, index) in recommendList" :key="index" :goodsItem="item"></goods-list-item>
-    </grid-view>
+    <goods-list :goods-list="recommendList"></goods-list>
   </div>
 </template>
 
 <script>
-  import GridView from '../../../components/common/gridView/GridView'
-  import GoodsListItem from "../../../components/content/goodsList/GoodsListItem";
+  import GoodsList from "../../../components/content/goodsList/GoodsList";
 
 	export default {
 		name: "DetailRecommendInfo",
     components: {
-		  GridView,
-      GoodsListItem
+      GoodsList,
     },
     props: {
 		  recommendList: {

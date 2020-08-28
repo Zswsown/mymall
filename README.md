@@ -28,7 +28,7 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-###1.封装tabbar
+### 1.封装tabbar
 ```
 （1）先设置好tabbar的高度、定位及其内容的显示方式，将其包含的内容作为一个插槽对外开放
 <template>
@@ -138,7 +138,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 （3）将对tabbar赋值tabbar-item的操作封装于maintabbar中
 ```
 
-###2.封装navbar
+### 2.封装navbar
 ```
 （1）将navbar分成左中右三部分，左右为固定宽度，中间为自适应宽度（flex:1）；
 （2）可通过设置css变量的方法给navbar绑定特定的class，以显示不同的样式
@@ -181,7 +181,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 </style>
 ```
 
-###3.请求数据，需要封装网络请求模块，封装一个request网络请求模块，其他小模块再引用它。
+### 3.请求数据，需要封装网络请求模块，封装一个request网络请求模块，其他小模块再引用它。
 ```
 import axios from 'axios'
 
@@ -237,18 +237,18 @@ export function getMultiData(){
 }
 ```
 
-###4.封装轮播图
+### 4.封装轮播图
 ```
 （1）封装轮播图，将请求到的轮播图的照片数组数据保存在banners中
 （2）在home文件夹中创建子组件childComps文件夹，保留关于home页面中的子组件，新建一个HomeSwiper组件，在该组件中导入封装好的swiper和swiperItem，将banners作为传入swiper组件的值，利用v-for循环遍历banners，将每一个item作为swiperItem，用v-bind:绑定需要的属性
 ```
 
-###5.封装tabControl
+### 5.封装tabControl
 ```
 ps：当一个组件中只包含文字，且文字是可变的，则可以不用插槽，可利用父组件传titles数组到该组件中，v-for遍历该titles数组，每一个item为一个title
 ```
 
-###6.封装回到顶部backToTop组件
+### 6.封装回到顶部backToTop组件
 ```
 （1）利用ref=”homescroll”取到首页的scroll组件
 （2）因为在组件上不可以直接绑定事件，所以我们可利用.native在backToTop组件上绑定点击事件，事件中调用scroll组件中的scrollTo()方法，使其滚动到顶部
